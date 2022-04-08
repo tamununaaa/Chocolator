@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "230963163783",
+    "project_id": "chocolator-5e19b",
+    "storage_bucket": "chocolator-5e19b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230963163783:android:cba97a909f2a7b8100be22",
+        "android_client_info": {
+          "package_name": "com.example.chocolator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230963163783-thmtdok4cjc0fa1frhermvl69cir107s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx8mGDH2rgGZKUMYuS5VjH87j4x_L1gks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230963163783-thmtdok4cjc0fa1frhermvl69cir107s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

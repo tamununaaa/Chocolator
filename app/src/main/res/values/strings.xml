@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Chocolator</string>
+
+
+    <string name="about_us1">No More Boring Chocolates has solely focused on delivering a delightful range of homemade customized chocolates with the
+                            right blend of flavorsome cocoa.</string>
+    <string name="about_us2">We offer an array of luxury of handmade chocolates with incredible taste, quality, art
+                            and texture.</string>
+
+    <string name="about_us3">No More Boring Chocolates offers chocolates for a variety of occasions like birthdays, weddings, baby
+                            showers, Valentines, festivals like Diwali, and other corporate events.</string>
+
+    <string-array name="order_base">
+        <item>Plain Chocolate</item>
+        <item>Milk Chocolate</item>
+        <item>White Chocolate</item>
+        <item>Dark Chocolate</item>
+        <item>Marble Chocolate</item>
+    </string-array>
+
+    <string-array name="order_flavor">
+        <item>Cocoa</item>
+        <item>Assorted</item>
+        <item>Dry Fruit</item>
+    </string-array>
+
+    <string-array name="create_size">
+        <item>3 X 5</item>
+        <item>4 X 6</item>
+    </string-array>
+
+    <string-array name="create_topping">
+        <item>Chocochips</item>
+        <item>Silver Balls</item>
+        <item>Fruit and Nut</item>
+        <item>Crackle Pops</item>
+        <item>Sprinkles</item>
+        <item>None</item>
+    </string-array>
+</resources>

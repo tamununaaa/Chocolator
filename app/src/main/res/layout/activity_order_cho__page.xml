@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A5204D"
+    tools:context=".OrderCho_Page">
+
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="#F5C6A5"
+        android:text="Let's get you some chocolate..."
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFE187"
+        android:text="Ordering chocolates was never this easy!"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/textView0"
+        app:layout_constraintStart_toStartOf="@+id/textView0"
+        app:layout_constraintTop_toBottomOf="@+id/textView0" />
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STEP 1: "
+            android:textStyle="bold|italic"
+            android:textColor="#FFE187"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Quantity: "
+            android:textSize="24sp"
+            android:textColor="#F5C6A5"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/quantityIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="in grams"
+        android:layout_marginLeft="25dp"
+        android:textColor="#FFE187"
+        android:textColorHint="#F5C6A5"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@id/ll1"
+        app:layout_constraintEnd_toEndOf="@id/ll1"
+        app:layout_constraintTop_toBottomOf="@id/ll1"/>
+
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/quantityIP"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STEP 2: "
+            android:textStyle="bold|italic"
+            android:textColor="#FFE187"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Base: "
+            android:textColor="#F5C6A5"
+            android:textSize="24sp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinnerBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@id/ll2"
+        app:layout_constraintStart_toStartOf="@id/ll2"
+        android:entries="@array/order_base"
+        app:layout_constraintTop_toBottomOf="@+id/ll2"/>
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerBase"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STEP 3: "
+            android:textStyle="bold|italic"
+            android:textColor="#FFE187"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Flavor: "
+            android:textSize="24sp"
+            android:textColor="#F5C6A5"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinnerFlavor"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/order_flavor"
+        app:layout_constraintEnd_toEndOf="@id/ll3"
+        app:layout_constraintStart_toStartOf="@id/ll3"
+        app:layout_constraintTop_toBottomOf="@+id/ll3"/>
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:id="@+id/ll4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerFlavor"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STEP 4: "
+            android:textStyle="bold|italic"
+            android:textColor="#FFE187"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Total Cost: "
+            android:textSize="24sp"
+            android:textColor="#F5C6A5"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/priceBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET PRICE"
+        android:backgroundTint="#FF7777"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintStart_toStartOf="@id/ll4"
+        app:layout_constraintEnd_toEndOf="@id/ll4"
+        app:layout_constraintTop_toBottomOf="@id/ll4"/>
+
+    <TextView
+        android:id="@+id/priceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"
+        android:textColor="#FFE187"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/priceBtn"
+        app:layout_constraintEnd_toEndOf="@id/priceBtn"
+        app:layout_constraintTop_toBottomOf="@id/priceBtn"/>
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:id="@+id/ll5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/priceView"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STEP 5: "
+            android:textStyle="bold|italic"
+            android:textColor="#FFE187"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F5C6A5"
+            android:text="Place your order! "
+            android:textSize="24sp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/orderBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ORDER NOW!"
+        android:backgroundTint="#FF7777"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintStart_toStartOf="@id/ll5"
+        app:layout_constraintEnd_toEndOf="@id/ll5"
+        app:layout_constraintTop_toBottomOf="@id/ll5"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
